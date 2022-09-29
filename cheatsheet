@@ -1,0 +1,31 @@
+Service docker start or docker -d (to start daemon)
+
+Docker info (system wide information)
+
+Docker run -p 80:80 image_id (to start container with an image specifying ports) 
+
+Docker run -p 80:80 -d --rm image_id --name myapp (detached and removed when stopped, with custom name)
+
+Docker start/stop container_id(hex or name) (to start or stop a specific container)
+
+Docker rm container name (list -- remove stopped containers)
+
+Docker container prune (remove all stopped containers)
+
+Docker images (list of images)
+
+Docker rmi image_id(remove images, if not used by any container)
+
+Docker image prune (remove unused images)
+
+Docker build -t goals:latest  . (build with name:tag combination for image) 
+
+Docker run -p 80:80 -d --rm goals:latest --name myapp (detached and removed when stopped, with custom name, with custom name:tag for image)
+
+docker tag node:app jonrynn/node-app (rename image)
+
+Docker login (for docker hub) docker logout (can still pull)
+
+Docker image prune -a (delete all nonused images)
+
+Docker pull jonrynn/node-app
